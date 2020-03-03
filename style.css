@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bitter';
+}
+.open {
+    color: white;
+    border: none;
+    background: hsl(214, 100%, 51%);
+    padding: 15px 0px;
+    width: 150px;
+    font-size: 20px;
+    margin: 0.5rem 1rem;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    overflow: auto;
+}
+form {
+    background: white;
+    color: black;
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 50px;
+    padding: 10px;
+    border-radius: 1rem;
+    position: relative;
+}
+form input {
+    width: 100%;
+    font-size: 20px;
+    outline: none;
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+form button[type*=submit] {
+    width: 100%;
+    background: hsl(214, 100%, 51%);
+    color: white;
+    border: none;
+    padding: 0.5rem 0rem;
+    font-size: 20px;
+    border-radius: 15px;
+}
+form button[type*=button] {
+    float: right;
+    background: none;
+    border: none;
+    color: gray;
+    font-size: 35px;
+    position: absolute;
+    top: 1%;
+    right: 2%;
+}
+form h1 {
+    text-align: center;
+}
+label {
+    display: block;
+}
+.modal-active {
+    display: block;
+}
+@keyframes drop {
+    from {
+        transform: translateY(0%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(5%);
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 800px) {
+    form {
+        width: 85%;
+        font-size: 20px;
+        line-height: 50px;
+    }
+    form button[type*=submit] {
+        font-size: 15px;
+    }
+}

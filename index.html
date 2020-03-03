@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Modal</title>
+    </head>
+    <body>
+        <section>
+            <button class="open">Click me!</button>
+            <div class="modal">
+                <form>
+                    <h1>Sign Up</h1>
+                    <button type="button">&times;</button>
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" placeholder="Your username..." autocomplete="off" required>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email"  id="email" placeholder="Your email..."  autocomplete="off" required>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="Your password..."  autocomplete="off" required>
+                    <label for="confirm">Confirm password:</label>
+                    <input type="password" name="confirm" id="confirm" placeholder="Confirm password..."  autocomplete="off" required>
+                    <button type="submit">Confirm</button>
+                </form>
+            </div>
+        </section>
+        <section>
+            <button class="open">Click me!</button>
+            <div class="modal">
+                <form>
+                    <h1>Login</h1>
+                    <button type="button">&times;</button>
+                    <label for="log-username">Username:</label>
+                    <input type="text" name="log-username" id="log-username" placeholder="Your username..." autocomplete="off" required>
+                    <label for="log-password">Password:</label>
+                    <input type="password" name="log-password" id="log-password" placeholder="Your password..."  autocomplete="off" required>
+                    <button type="submit">Confirm</button>
+                </form>
+            </div>
+        </section>
+        <script src="./app.js"></script>
+    </body>
+</html>
